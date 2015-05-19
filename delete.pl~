@@ -1,0 +1,4 @@
+delete(_,[],[]).
+delete(A,[A|L],M):-!.
+delete(A,[X|L],[X|M]):-delete(A,L,M).
+
